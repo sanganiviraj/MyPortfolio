@@ -1,0 +1,92 @@
+.background-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+}
+
+.section-title.small {
+    font-size: 2rem;
+    text-align: left;
+    margin-bottom: 2rem;
+}
+
+.edu-list,
+.cert-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.edu-item,
+.cert-item {
+    padding: 1.5rem;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.edu-icon,
+.cert-icon {
+    width: 50px;
+    height: 50px;
+    background: var(--primary-glow);
+    color: var(--primary);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.edu-content h3,
+.cert-info h3 {
+    font-size: 1.1rem;
+    margin-bottom: 0.3rem;
+}
+
+.edu-content p,
+.cert-info p {
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+    margin-bottom: 0.2rem;
+}
+
+.edu-content span {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    font-weight: 600;
+}
+
+.cert-item {
+    flex-direction: column;
+}
+
+.cert-header {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+}
+
+.cert-topics {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    background: var(--surface-hover);
+    padding: 0.8rem;
+    border-radius: 0.5rem;
+    margin: 1rem 0;
+}
+
+.cert-link {
+    font-size: 0.85rem;
+    color: var(--primary);
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    margin-top: auto;
+}
+
+@media (max-width: 900px) {
+    .background-grid {
+        grid-template-columns: 1fr;
+    }
+}
